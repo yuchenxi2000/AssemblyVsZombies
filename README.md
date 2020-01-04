@@ -6,13 +6,15 @@
 
 在游戏主循环函数前面注入键控代码，使得键控脚本在每一帧都被调用，从而实现真正意义上100%精确的键控。
 
-该方法主要用于高精度键控，也可和其他脚本配合使用。
+该方法主要用于高精度键控，也可和其他脚本配合使用。（比如 https://github.com/yuchenxi2000/CppVsZombies-Mac ）
 
 （所以有人愿意写一个Windows版本吗）
 
 键控的实现主要依赖于PvZ游戏内部函数 void click_scene_2c3fa(PvZ*, int x, int y, int click_key);
 
 该函数在鼠标点击场地时被调用，通过注入代码调用它可以得到手动点击相同的效果。
+
+代码注入基于自己写的代码注入框架 https://github.com/yuchenxi2000/mac-code-inject
 
 游戏版本：PvZ Mac v1.0.40
 
