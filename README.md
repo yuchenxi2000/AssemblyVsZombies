@@ -26,6 +26,10 @@
 
 ## Notice
 
+该项目需要asmjit库：https://github.com/asmjit/asmjit
+
+请设置好header/library path
+
 必须要以root权限运行
 
 建议在选完卡进入游戏界面后注入
